@@ -7,12 +7,25 @@
  ]
 
  let index = 0;
+
+ let lines = document.querySelectorAll('.line');
+
+
+
+
  
  function changeback(){
 
  const current = media[index];
 
 homePage.style.backgroundImage=`url(${current})`;
+
+lines.forEach(function(line){
+    line.classList.remove('act');
+})
+
+lines[index].classList.add('act')
+
  index++;
 
  if(index>=media.length){
@@ -21,6 +34,7 @@ homePage.style.backgroundImage=`url(${current})`;
  }
 
  }
+
 
 changeback();
 setInterval(changeback, 7000);
@@ -1235,7 +1249,7 @@ function validMpesaPrompt() {
 
 
 function closePaymentPage(){
-paymentForm.style.display = "none";
+window.location.href= "index.html";
 }
 
 
