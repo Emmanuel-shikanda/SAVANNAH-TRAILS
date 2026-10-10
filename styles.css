@@ -3890,13 +3890,20 @@ header .social-icons{
 
 
 #navbar{
-    background-color:transparent;
+     background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+
+    margin:7px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     position: fixed;    
     top:50px;
     width:52px;
-    height:100Vh;
+    height:auto;
     z-index:5;
     overflow: hidden;
     transition:ease-in 0.5s;
@@ -6195,14 +6202,18 @@ border:none;
     color:white;
 }
 
-
-
  #phone-bar{
     display:block;
-    background-color:black;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    
     position: fixed;    
-    bottom:0;
-    width:100%;
+    bottom:5px;
+    width:95%;
+    margin:10px;
+    border-radius:20px;
     max-width:590px;                                       
     height:70px;
     z-index:1000;
@@ -6245,6 +6256,8 @@ border:none;
 
 }
  
+
+
 
     
 }
